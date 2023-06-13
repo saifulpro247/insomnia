@@ -4,6 +4,7 @@
 	--main-font: 'Poppins', sans-serif;
 	--primary-color: #04091E;
 	--secondary-color: #747681;
+  --btn-bg: #6022ea;
 	--line-height: 32px;
 	--body-font-size: 18px;
 	--body-bg: #fff;
@@ -194,7 +195,7 @@ body{
 .single_testmonial .author_thumb_designation .author_thumb img {
   height: 50px;
   width: 50px;
-  border: 2px solid green;
+  border: 2px solid var(--btn-bg);
   border-radius: 50%;
 }
 .single_testmonial .author_thumb_designation .author_thumb {
@@ -272,12 +273,12 @@ body{
 	display: block;
 	margin: 15px 0;
 	list-style: none;
-	border: 1px solid #58d9a7;
+	border: 1px solid var(--btn-bg);
 	border-radius: 50%;
 	height: 40px;
 	width: 40px;
 	padding: 5px;
-	background-color: #58d9a7;
+	background-color: rgba(96, 34, 234, .6);
   transition: .3s;
   cursor: pointer;
 }
@@ -285,7 +286,7 @@ body{
 	position: absolute;
 	top: 0;
 	right: 0;
-	background-color: rgba(82, 226, 171, .8);
+	background-color: rgba(96, 34, 234, .5);
 	padding: 10px;
 	border-bottom-right-radius: 30px;
 	height: 100%;
@@ -311,7 +312,7 @@ body{
 .incafe_portfolio .single_work_demo {
 	background-color: #fff;
 	padding: 30px;
-	border-radius: 20px;
+	border-radius: 0;
   position: relative;
   overflow: hidden;
   margin-bottom: 30px;
@@ -346,7 +347,7 @@ body{
   background-color: rgba(255,255,255, .5);
   padding: 30px;
   left: 0;
-  border-radius: 10px;
+  border-radius: 0;
   backdrop-filter: blur(5px);
   transition: .8s;
   opacity: 0;
@@ -372,23 +373,32 @@ body{
 }
 
 .single_work_hover_desc .go_to_project_link .project_btn {
-  background: rgba(82, 226, 171, .8);
+  background: var(--btn-bg);
   height: 40px;
   width: 40px;
   display: inline-block;
   text-align: center;
   padding: 4px;
   margin: 0 5px 0 0;
+  border: 1px solid transparent;
+  transition: .4s;
+}
+.single_work_hover_desc .go_to_project_link:hover .project_btn {
+  background: transparent;
+  border-color: var(--btn-bg);
 }
 .single_work_hover_desc .go_to_project_link .project_btn i {
   color: var(--body-bg);
   font-size: 14px;
 }
+.single_work_hover_desc .go_to_project_link:hover .project_btn i{
+  color: var(--primary-color)
+}
 
 .incafe_portfolio .view_all_works {
   padding: 10px 50px;
-  background-color: #58e4a7;
-  border: 1px solid #58e4a7;
+  background-color: var(--btn-bg);
+  border: 1px solid var(--btn-bg);
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
@@ -404,4 +414,121 @@ body{
 .incafe_portfolio .view_all_works:hover {
   background-color: transparent;
   color: var(--primary-color);
+}
+
+/* blog area css */
+
+.blog_box_meta {
+  padding: 0 40px 40px 40px;
+}
+.blog_box_meta .blog_info {
+  font-size: 14px;
+}
+.single_blog_item {
+  background-color: #fff;
+  box-shadow: 0px 0px 30px 5px rgba(0, 0, 0, .05);
+}
+.blog_thumb_img {
+  margin-bottom: 20px;
+}
+.blog_info .blog_writer_name a {
+	color: var(--secondary-color);
+	text-decoration: none;
+	margin-left: 5px;
+}
+.blog_info .blog_time i{
+  margin-right: 5px;
+}
+
+.blog_box_meta .blog_title {
+  font-size: 24px;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-weight: 600;
+  line-height: 1.5;
+  margin-bottom: 15px;
+  display: inline-block;
+  letter-spacing: -1px;
+  transition: .3s;
+}
+.blog_box_meta p {
+  font-size: 16px;
+  line-height: 26px;
+  font-weight: 400;
+  margin: 0;
+}
+.blog_box_meta .blog_title:hover {
+	color: var(--btn-bg);
+}
+
+/* hero area css */
+
+.header_height{
+  height: 100vh;
+  position: relative;
+}
+.header_height::before {
+	position: absolute;
+	content: '';
+	background: rgba(0,0,0, .8);
+	height: 100%;
+	width: 100%;
+}
+.header_background {
+  background-color: #ddd;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+
+
+}
+.hero_area_content h1 {
+  font-size: 75px;
+  font-weight: 700;
+  color: var(--body-bg);
+  line-height: 1.2;
+  margin-bottom: 30px;
+  position: relative;
+}
+.hero_area_content p {
+  font-size: 30px;
+  position: relative;
+  line-height: 1.5;
+  margin-left: 100px;
+  margin-bottom: 0;
+  color: var(--body-bg);
+}
+.hero_area_content p:before {
+  position: absolute;
+  content: ;
+  content: '';
+  left: -70px;
+  top: 20px;
+  width: 50px;
+  height: 2px;
+  background-color: #dee;
+  display: block;
+}
+
+.home_right_sideslink {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.home_right_sideslink li a span {
+  display: block;
+}
+.home_right_sideslink li {
+  display: block;
+	padding: 0;
+	text-align: left;
+	background-color: rgba(0, 0, 0, 0.2);
+	border-top: 1px solid rgba(255, 255, 255, 0.05);
+	-webkit-transition: all 0.5s ease-in-out;
+	transition: all 0.5s ease-in-out;
+	position: relative;
+}
+
+.home-sidelinks li {
+
 }
