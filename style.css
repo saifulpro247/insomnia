@@ -1,0 +1,143 @@
+/* Style Css Here */
+
+:root{
+	--main-font: 'Poppins', sans-serif;
+	--primary-color: #04091E;
+	--secondary-color: #747681;
+	--line-height: 32px;
+	--body-font-size: 18px;
+	--body-bg: #fff;
+}
+
+/* base css */
+body{
+	font-family: var(--main-font);
+	color: 	var(--secondary-color);
+	line-height: var(--line-height);
+	font-size: var(--body-font-size);
+	background-color: var(--body-bg);
+}
+
+/* margin and padding css */
+.section_padding{
+	padding: 100px 0;
+}
+
+/* about us section css */
+.section_border_top {
+	padding-top: 50px;
+	border-top: 1px solid #EAEAEB;
+}
+.incafe_service_area {
+	background-color: #fafafa;
+}
+
+.box_icon i {
+  display: inline-block;
+  font-size: 30px;
+}
+.box_icon {
+  height: 65px;
+  width: 65px;
+  background-color: rgba(53,191,230,.35);
+  text-align: center;
+  padding: 15px;
+  border-radius: 50%;
+  margin-bottom: 20px;
+  transition: .3s;
+}
+
+.incafe_services h2 {
+  font-size: 45px;
+  font-weight: 700;
+  color: var(--primary-color);
+  line-height: 60px;
+}
+.incafe_services h2 span {
+  font-weight: 500;
+}
+
+.incafe_services p {
+  margin-left: 50px;
+  font-size: 20px;
+  margin: 0;
+  font-weight: 400;
+}
+.single_service_box {
+	background-color: #fff;
+	padding: 30px;
+	border-radius: 10px;
+	transition: .3s;
+	box-shadow: 0;
+}
+.single_service_box:hover {
+	background-color: transparent;
+	background-image: linear-gradient(180deg, #85EF95 0%, #4CE0AD 100%);
+	border-radius: 10px;
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
+}
+.single_service_box:hover .box_description p, .single_service_box:hover .box_button {
+	color: var(--primary-color);
+}
+.single_service_box:hover .box_icon{
+	background-color: #04091E0f;
+	color: var(--primary-color);
+}
+.single_service_box h3 {
+  color: var(--primary-color);
+  font-size: 24px;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+.single_service_box .box_description p {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 28px;
+  margin-bottom: 20px;
+}
+
+/* about ceo */
+
+.ceo_about_area .ceo_about_text h2 {
+  font-size: 55px;
+  font-family: var(--main-font);
+  color: var(--primary-color);
+  font-weight: 700;
+  line-height: 60px;
+  margin-bottom: 30px;
+}
+.ceo_about_area .ceo_about_text p {
+  margin-bottom: 40px;
+}
+.ceo_about_area .ceo_about_text .ceo_signature {
+  margin-bottom: 20px;
+}.ceo_about_area 
+.ceo_about_area .ceo_about_text .ceo_signature h3 {
+  color: var(--primary-color);
+}
+.ceo_about_area .ceo_about_text h3 {
+  font-weight: 600;
+  color: var(--primary-color);
+  margin: 0;
+}
+
+/* animation */
+@keyframes roundcircle {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+
+.ceo_about_area .ceo_image {
+  position: relative;
+}
+.ceo_about_area .ceo_image .rotate_animation {
+  position: absolute;
+  top: 30px;
+  right: 60px;
+  animation: roundcircle 24s infinite;
+}
