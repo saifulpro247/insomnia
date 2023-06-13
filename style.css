@@ -257,6 +257,11 @@ body{
   font-family: var(--main-font);
   margin-bottom: 10px;
   display: block;
+  font-size: 20px; 
+  transition: .3s;
+}
+.member_content_wrap .member_name:hover a{
+  text-decoration: none;
 }
 .member_content_wrap .member_designation h6 {
   font-weight: 400;
