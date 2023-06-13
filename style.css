@@ -594,9 +594,12 @@ body{
   -webkit-transition: .3s all ease;
   -o-transition: .3s all ease;
   transition: .3s all ease;
-  border: 3px solid #efefef; }
+  border: 3px solid var(--secondary-color); 
+  margin-bottom: 30px;
+}
   .step.active, .step:hover, .step:focus {
-    border: 3px solid #ec1e64; }
+    border: 3px solid var(--btn-bg); 
+  }
   .step .number {
     font-size: 12px;
     letter-spacing: .2rem;
@@ -606,7 +609,7 @@ body{
     color: #999; }
   .step h3, .step .h3 {
     font-size: 18px;
-    color: #ec1e64;
+    color: var(--btn-bg);
     font-weight: 700; }
   .step *:last-child {
     margin-bottom: 0; }
