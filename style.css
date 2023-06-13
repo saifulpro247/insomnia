@@ -141,3 +141,90 @@ body{
   right: 60px;
   animation: roundcircle 24s infinite;
 }
+
+/* happy client */
+
+.incafe_happy_client {
+  background-color: #04091e;
+}
+.section_title h2 {
+  font-size: 40px;
+  font-weight: 700;
+  color: #fff;
+  line-height: 60px;
+  margin: 0;
+}
+.section_title {
+}
+
+.single_testmonial {
+	position: relative;
+	padding: 30px;
+	background-color: #1D2234;
+	border-radius: 10px;
+}
+.single_testmonial .author_content .testmonial_quote {
+  display: inline-block;
+  height: 40px;
+  width: 40px;
+  background: #fff;
+  border-radius: 50%;
+  text-align: center;
+  padding: 4px;
+  margin-bottom: 20px;
+}
+.single_testmonial .testmonial_quote i {
+  font-size: 20px;
+}
+.single_testmonial .service_rating_by_client {
+	position: absolute;
+	top: 30px;
+	right: 30px;
+}
+.single_testmonial .service_rating_by_client span {
+	color: #FF9E15;
+}
+.single_testmonial .testmonial_description p {
+	color: #fff;
+	margin-bottom: 20px;
+}
+
+.single_testmonial .author_thumb_designation .author_thumb img {
+  height: 50px;
+  width: 50px;
+  border: 2px solid green;
+  border-radius: 50%;
+}
+.single_testmonial .author_thumb_designation .author_thumb {
+  margin-right: 15px;
+}
+.single_testmonial .author_name_designation .author_name {
+  margin: 0;
+  color: #fff;
+  font-size: 20px;
+  font-weight: 600;
+}
+.single_testmonial .author_name_designation .author_designation {
+  margin: 0;
+  font-weight: 400;
+}
+
+.single_slider_item .owl-dots {
+  text-align: center;
+  margin-top: 40px;
+}
+.single_slider_item .owl-dots button {
+  height: 5px;
+  width: 10px;
+  background: #fff;
+  margin: 3px;
+  border-radius: 5px;
+  display: inline-block;
+  transition: .3s;
+}
+.single_slider_item .owl-dots .owl-dot.active{
+  width: 20px;
+}
+
+/* our team */
+
