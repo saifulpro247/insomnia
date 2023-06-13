@@ -307,9 +307,7 @@ body{
 }
 
 /* work demo */
-.incafe_portfolio.section_padding{
-  padding-bottom: 70px;
-}
+
 .incafe_portfolio .single_work_demo {
 	background-color: #fff;
 	padding: 30px;
@@ -358,8 +356,6 @@ body{
   opacity: 1;
 }
 
-
-
 .single_work_demo .single_work_hover_desc .project_name {
   color: var(--primary-color);
   margin-bottom: 0;
@@ -384,7 +380,28 @@ body{
   padding: 4px;
   margin: 0 5px 0 0;
 }
-.project_btn i {
+.single_work_hover_desc .go_to_project_link .project_btn i {
   color: var(--body-bg);
   font-size: 14px;
+}
+
+.incafe_portfolio .view_all_works {
+  padding: 10px 50px;
+  background-color: #58e4a7;
+  border: 1px solid #58e4a7;
+  color: #fff;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 600;
+  transition: .5s;
+}
+.incafe_portfolio .view_more_works {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+}
+.incafe_portfolio .view_all_works:hover {
+  background-color: transparent;
+  color: var(--primary-color);
 }
