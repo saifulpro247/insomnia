@@ -203,6 +203,7 @@ body{
 	background-image: linear-gradient(180deg, #85EF95 0%, #4CE0AD 100%);
 	border-radius: 10px;
 	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
+  transform: scale(1.1);
 }
 .single_service_box:hover .box_description p, .single_service_box:hover .box_button {
 	color: var(--primary-color);
@@ -269,6 +270,49 @@ body{
   right: 60px;
   animation: roundcircle 24s infinite;
 }
+
+/* our company profile */
+.incafe_previous_work {
+	border-top: 1px solid #EAEAEB;
+}
+.single_work_box {
+	padding: 25px;
+	background-color: #fbfbfb;
+	box-shadow: 0px 0 5px 3px #fbfbfb;
+  transition: .4s;
+}
+.single_work_box:hover {
+	background-color: transparent;
+	background-image: linear-gradient(180deg, #85EF95 0%, #4CE0AD 100%);
+	box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.14);
+	transform: scale(1.1);
+}
+.single_work_box .work_count {
+  font-size: 40px;
+  margin-bottom: 20px;
+  font-weight: 700;
+  color: var(--primary-color);
+}
+.single_work_box .work_count span {
+  margin-left: -5px;
+}
+.single_work_box h5 {
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 15px;
+}
+.single_work_box p {
+  font-size: 16px;
+  line-height: 24px;
+  text-align: left;
+  font-weight: 400;
+  margin: 0;
+}
+.single_work_box:hover p{
+  color: var(--primary-color);
+}
+
 
 /* happy client */
 
@@ -588,7 +632,12 @@ body{
 	color: var(--btn-bg);
 }
 /*  our work step */
-
+.incafe_workflow.incafe_work_process{
+  padding-bottom: 70px;
+}
+.incafe_workflow.incafe_work_process{
+	background-color: #fbfbfb;
+}
 .step {
   padding: 30px;
   -webkit-transition: .3s all ease;
@@ -606,13 +655,119 @@ body{
     font-weight: bold;
     margin-bottom: 15px;
     display: block;
-    color: #999; }
+    color: #999; 
+  }
   .step h3, .step .h3 {
     font-size: 18px;
     color: var(--btn-bg);
-    font-weight: 700; }
+    font-weight: 700; 
+  }
   .step *:last-child {
-    margin-bottom: 0; }
+    margin-bottom: 0; 
+  }
 
 
 
+/*  footer css */
+
+.footer_area_bg, .footer_credit_area {
+  background-color: var(--primary-color);
+}
+.footer_bg_item {
+	position: relative;
+	z-index: 1;
+}
+.footer_item.footer_about {
+  position: relative;
+}
+
+.footer_item {
+  color: #dedede;
+}
+.footer_item .footer_social_links li {
+	display: inline-block;
+	height: 40px;
+	width: 40px;
+	border: 1px solid;
+	border-radius: 50%;
+	text-align: center;
+	padding: 3px;
+	margin: 0 5px 0 0;
+	background-color: #ddd;
+}
+.footer_item .footer_social_links li a {
+	color: var(--primary-color);
+}
+.footer_social_links {
+  margin-top: 30px;
+}
+.footer_item h4 {
+  font-size: 22px;
+  font-weight: 600;
+  color: var(--body-bg);
+  margin-bottom: 20px;
+}
+.footer_item li {
+  display: block;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.footer_item li a {
+  display: block;
+  text-decoration: none;
+  color: #dedede;
+  font-size: 16px;
+}
+.footer_item li .content strong {
+  display: block;
+  color: #fff;
+}
+.footer_item li .content {
+  margin-bottom: 15px;
+}
+.footer_item li:last-child .content {
+  margin: 0;
+}
+
+.footer_item form input {
+  border: 0;
+  margin: 0;
+  border-radius: 0;
+  position: relative;
+  padding: 15px;
+  height: 50px;
+  width: 100%;
+}
+.footer_item form input button {
+  position: absolute;
+  right: 0;
+}
+.footer_item form {
+  position: relative;
+}
+.footer_item .form-control:focus {
+	box-shadow: none;
+}
+.footer_item form button {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 10px 20px;
+  border: 0;
+  margin: 0;
+  background-color: var(--btn-bg);
+  height: 50px;
+}
+.footer_item form button i {
+  color: #fff;
+}
+/* footer credit */
+
+.footer_credit_area {
+  padding: 15px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+.footer_credit_area p {
+  margin: 0;
+}
