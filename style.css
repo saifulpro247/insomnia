@@ -666,6 +666,33 @@ body{
     margin-bottom: 0; 
   }
 
+/* contact form */
+
+.form.site_form h3 {
+  font-size: 24px;
+  text-transform: none;
+  font-weight: 600;
+  color: var(--primary-color);
+  margin-bottom: 30px;
+}
+.form.site_form .site_contact_form input, .form.site_form .site_contact_form textarea {
+  border-radius: 0;
+  padding: 10px;
+}
+.form.site_form .site_contact_form label {
+  font-size: 16px;
+  font-weight: 500;
+  color: var(--primary-color);
+}
+.form.site_form .site_contact_form textarea{
+  height: 200px;
+}
+
+.btn.contact_btn {
+	background-color: var(--btn-bg);
+	color: #fff;
+	padding: 15px 20px !important;
+}
 
 
 /*  footer css */
