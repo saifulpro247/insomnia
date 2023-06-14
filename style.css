@@ -17,13 +17,60 @@ body{
 	line-height: var(--line-height);
 	font-size: var(--body-font-size);
 	background-color: var(--body-bg);
+  position: relative;
 }
 
 /* margin and padding css */
 .section_padding{
 	padding: 100px 0;
 }
+
+
 /* menu css */
+
+.main_menu_area ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+.main_menu_area ul li {
+  display: inline-block;
+  margin: 0 5px;
+}
+.main_menu_area ul li a {
+  display: block;
+  text-decoration: none;
+  color: var(--primary-color);
+  font-size: 16px;
+}
+.main_menu_area ul li a.hiring_button {
+  display: inline-block;
+  background-color: var(--btn-bg);
+  padding: 5px 20px;
+  border-radius: 20px;
+  color: #fff;
+}
+
+.header_right_area ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* hero area css */
 .hero_area{
