@@ -12,58 +12,32 @@
 }
 /* Medium Layout: 1280px. */
 @media only screen and (min-width: 992px) and (max-width: 1200px) { 
-	.grid_container {
-		grid-template-columns: 2fr 2fr 2fr 2fr 2fr;
-	}
-
+	
+	.ceo_about_area .ceo_about_text h2 {font-size: 40px;}
+	.member_social_links li {margin: 8px 0;}
+	.footer_item.ps-5 {padding: 0 !important;}
+	.hero_area_content h1 {	font-size: 65px;}
+	.hero_area_content p {	font-size: 25px;}
 }
 /* Tablet & mobile Layout: 768px. */
 @media only screen and (max-width: 991px) { 
-
+	.incafe_services h2 {font-size: 40px;}
+	.most_important_links {display: none;}
+	.hero_area_content h1 {	font-size: 60px;}
+	.hero_area_content p {	font-size: 25px; margin-left: 0;}
+	.hero_area_content p::before {left: 0;	display: none;}
+	
 }
 
 /* Tablet Layout: 768px. */
 @media only screen and (min-width: 768px) and (max-width: 991px) { 
-	.mobozone_hero_slider .mobozone_single_slider_content {
-			padding: 40px 50px;
-	}
-	.mobozone_slider_text h2 {
-		font-size: 35px;
-		margin-bottom: 20px;
-	}
-	.mobozone_slider_text p, .mobozone_slider_text span {
-		font-size: 25px;
-		margin-bottom: 15px;
-	}
-	.mobozone_hero_slider .slider .owl-nav button.owl-next {
-		right: -9%;
-	}
-	.single_cat_section {
-		padding: 15px;
-	}
-	.single_cat_section a.cat_link img {
-		max-width: 70px;
-		max-height: 70px;
-	}
-	.single_cat_section a.cat_link span {
-		font-size: 15px;
-	}
-	.grid_container {
-		grid-template-columns: 2fr 2fr 2fr;
-	}
-	.footer_download_app .app_links a img {
-		display: block;
-		margin-top: 15px;
-	}
+	
 }
 /* Mobile Layout: 320px. */
 @media only screen and (max-width: 767px) { 
-		.mobozone_featured_category.section_gap{
-			padding-bottom: 26px;
-		}
-		.grid_container {
-		grid-template-columns: 2fr 2fr ;
-		}
+		
+	.hero_area_content h1 {	font-size: 50px;}
+	.hero_area_content p {	font-size: 20px; margin-left: 0;}
  
 }
 /* extra small device*/
