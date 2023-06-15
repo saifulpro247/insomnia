@@ -1,12 +1,5 @@
 (function($) {
     "use strict";
-
-$('#mobile-menu').meanmenu({
-      meanScreenWidth: "767",
-      meanMenuContainer: '.responsive-menu'
-    });
-
-$(".flexnav").flexNav({});
 // Menu js for Position fixed
     $(window).scroll(function(){
       var window_top = $(window).scrollTop() + 1; 
