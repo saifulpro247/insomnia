@@ -9,6 +9,7 @@
         <link href="assets/css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
         <link rel="stylesheet" href="assets/fonts/icofont.min.css">
+        <link rel="stylesheet" href="assets/css/meanmenu.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
         <link href="style.css" rel="stylesheet">
         <link href="assets/css/responsive.css" rel="stylesheet">
@@ -19,14 +20,14 @@
         <header class="main-header incafe_header_area">
             <div class="header_menu_area">
                 <div class="container">
-                    <div class="row">
-                        <div class="col-md-3">
+                    <div class="row d-flex align-items-center">
+                        <div class="col-md-3 col-lg-3 col-sm-6">
                             <div class="site_logo">
                                 <a href="#"><img src="assets/img/logo.webp" alt="" class="img-fluid"></a>
                             </div>
                         </div>
-                        <div class="col-md-6">
-                            <div class="main_menu_area">
+                        <div class="col-md-9 col-lg-6 d-none d-md-block">
+                            <div class="main_menu_area  d-flex justify-content-lg-end">
                                 <ul>
                                     <li><a href="#">Home</a></li>
                                     <li><a href="#">About</a></li>
@@ -38,17 +39,84 @@
                                 </ul>
                             </div>
                         </div>
-                        <div class="col-md-3">
-                            <div class="header_right_area">
+                        <div class="col-lg-3 d-none d-lg-block">
+                            <div class="header_right_area d-flex justify-content-end">
                                 <ul>
                                     <li><a href="#" class="project_start_btn">Start a Project</a></li>
                                 </ul>
                             </div>
                         </div>
                     </div>
+
+                    <div class="responsive-menu"></div>
+                
+                    <div class="main-menu d-md-none">
+                        <nav id="mobile-menu">
+                            <ul data-breakpoint="800" class="flexnav">
+                                <li><a href="#">Home</a>
+                                    <ul class="submenu">
+                                        <li><a href="index.html">Home style 1</a></li>
+                                        <li><a href="index-2.html">Home style 2</a></li>
+                                        <li><a href="index-3.html">Home style 3</a>
+                                          <!-- <ul class="submenu">
+                                            <li><a href="#">Home style 1</a></li>
+                                            <li><a href="#">Home style 2</a></li>
+                                            <li><a href="#">Home style 3</a></li>
+                                          </ul> -->
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Listing</a>
+                                    <ul class="submenu">
+                                        <li><a href="#">service</a>
+                                          <ul class="submenu">
+                                              <li><a href="services-1.html">Service style 1</a></li>
+                                              <li><a href="services-2.html">Service style 2</a></li>
+                                              <li><a href="services-3.html">Service style 3</a></li>
+                                          </ul>
+                                        </li>
+                                        <li><a href="#">Team</a>
+                                          <ul class="submenu">
+                                            <li><a href="team-1.html">Team style 1</a></li>
+                                            <li><a href="team-2.html">Team style 2</a></li>
+                                            <li><a href="team-3.html">Team style 3</a></li>
+                                          </ul>
+                                        </li>
+                                        <li><a href="#">Gallery</a>
+                                          <ul class="submenu">
+                                            <li><a href="gallery-1.html">Gallery style 1</a></li>
+                                            <li><a href="gallery-2.html">Gallery style 2</a></li>
+                                          </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Dashboards</a></li>
+                                <li><a href="#">About Us</a>
+                                    <ul class="submenu">
+                                        <li><a href="about.html">About style 1</a></li>
+                                        <li><a href="about-2.html">About style 2</a></li>
+                                        <li><a href="testimonial.html">Our Testimonial</a></li>
+                                        <li><a href="Faq.html">Our Faq</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="#">Blog</a>
+                                    <ul class="submenu">
+                                        <li><a href="blog-1.html">Blog style 1</a></li>
+                                        <li><a href="blog-2-column.html">Blog style 2</a></li>
+                                        <li><a href="blog-details.html">Blog Details</a></li>
+                                    </ul>
+                                </li>
+                                <li><a href="contact.html">Contact</a></li>
+                            </ul>
+                        </nav> <!-- mobile menu nav end -->
+                    </div> <!-- mobile menu div end -->
+                    <!--  menu area markup end here  -->
                 </div>
+                <!-- this is mobile menu code -->
+
             </div>
         </header>
+
   
         <main>
             <!-- hero area -->
@@ -1200,6 +1268,8 @@
         <!-- left fixed content -->
 
         <script src="assets/js/Jquery-3.7.0.js"></script>
+
+        <script src="assets/js/meanmenu.js"></script>
         <script src="assets/js/bootstrap.min.js"></script>
         <script src="assets/js/aos.min.js"></script>
         <script src="assets/js/modernizr-3.12.0.js"></script>

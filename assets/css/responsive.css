@@ -26,6 +26,10 @@
 	.hero_area_content h1 {	font-size: 60px;}
 	.hero_area_content p {	font-size: 25px; margin-left: 0;}
 	.hero_area_content p::before {left: 0;	display: none;}
+	.left_side_fixed {
+		left: -15%;
+		top: 3%;
+	}
 	
 }
 

@@ -24,7 +24,30 @@ body{
 .section_padding{
 	padding: 100px 0;
 }
+/* site fixed item */
 
+.left_side_fixed {
+  position: absolute;
+  left: -9%;
+  top: 3%;
+  z-index: 99;
+}
+.side_content li {
+  display: inline-block;
+  margin: 10px;
+}
+.side_content li a {
+  display: block;
+  text-decoration: none;
+  font-size: 14px;
+  color: #fff;
+  z-index: 9;
+}
+.side_content {
+	rotate: -90deg;
+	position: fixed;
+	background-color: var(--btn-bg);
+}
 
 /* menu css */
 
@@ -40,14 +63,18 @@ body{
 .main_menu_area ul li a {
   display: block;
   text-decoration: none;
-  color: var(--primary-color);
+  color: #fff;
   font-size: 16px;
+  font-weight: 500;
 }
 .main_menu_area ul li a.hiring_button {
   display: inline-block;
   background-color: var(--btn-bg);
   padding: 5px 20px;
   border-radius: 20px;
+  color: #fff;
+}
+.menu_fixed .main_menu_area ul li a.hiring_button {
   color: #fff;
 }
 
@@ -58,20 +85,51 @@ body{
 }
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+.project_start_btn {
+  background-color: transparent;
+  border: 1px solid var(--body-bg);
+  padding: 5px 20px;
+  border-radius: 25px;
+  color: #fff;
+  font-weight: 400;
+}
+.menu_fixed .project_start_btn {
+  background-color: var(--btn-bg);
+  border: 1px solid var(--btn-bg);
+  color: #fff;
+}
+.header_right_area ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.header_right_area ul li a {
+  display: inline-block;
+  text-align: center;
+  text-decoration: none;
+}
+.header_menu_area {
+  padding: 15px 0;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 1;
+  background-color: rgba(0,0,0, .7);
+}
+.menu_fixed {
+  position: fixed;
+  background-color: #fff;
+  box-shadow: 0 3px 10px -8px rgba(0,0,0, .7);
+}
+.menu_fixed .main_menu_area ul li a {
+  color: var(--primary-color);
+}
+.mean-container a.meanmenu-reveal {
+  padding: 25px 20px 0 0;
+}
+.mean-container .mean-nav {
+  top: 18px;
+}
 /* hero area css */
 .hero_area{
   display: flex;
