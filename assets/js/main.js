@@ -31,7 +31,10 @@
       }
 
     }
-  })
+  });
+  // mixitup
+
+  var mixer = mixitup('.project_filter');
 
     
 
