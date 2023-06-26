@@ -1325,3 +1325,76 @@ a, a:hover, a:focus{
 	line-height: 42px;
 	font-size: 14px;
 }
+
+.blog-social .blog-social-item .icon .facebook i {
+	background-color: #1877f2;
+}
+.blog-social .blog-social-item .icon .twiter i {
+	background-color: #00acee;
+}
+.blog-social .blog-social-item .icon .pinters i {
+	background-color: #c8232c;
+}
+/* sidebar */
+.blog-sidebar .search-form {
+	position: relative;
+}
+.blog-sidebar .search-form input[type="search"] {
+	width: 100%;
+	height: 50px;
+	font-size: 14px;
+	line-height: 50px;
+	border-radius: 3px;
+	font-weight: 500;
+	border: none;
+	background: #fff;
+	color: #8f8d98;
+	outline: 0;
+	padding: 0 25px;
+	border: 1px solid #cfd2de;
+	font-family: var(--main-font);
+}
+.blog-sidebar .search-form button {
+	font-size: 16px;
+	line-height: 52px;
+	background: 0 0;
+	border: none;
+	outline: 0;
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	right: 17px;
+	top: 0;
+	z-index: 2;
+	transition: all 0.4s ease;
+	color: rgba(0, 0, 0, 0.8);
+}
+.blog-sidebar .widget {
+	position: relative;
+	border: 1px solid #ebecf1;
+	border-radius: 10px;
+	margin: 0 0 30px;
+	padding: 32px 30px 37px;
+}
+.blog-sidebar .widget .widget-title, .footer-area .widget .widget-title {
+	color: var(--primary-color);
+	font-size: 18px;
+	line-height: 24px;
+	text-transform: capitalize;
+	border-bottom: 1px solid #cfd2de;
+	display: inline-block;
+	position: relative;
+	padding-bottom: 15px;
+	margin: 0 0 20px;
+}
+.blog-sidebar .widget ul {
+	margin: 0;
+	padding: 0;
+}
+
+.blog-sidebar .widget ul li a {
+	color: var(--secondary-color);
+	display: inline-block;
+	line-height: 32px;
+	font-size: 16px;
+}
