@@ -804,7 +804,7 @@ a, a:hover, a:focus{
 .contact_form input {
   width: 100%;
   border: 0;
-  background: #e7e7e7;
+  background: #f0f0f0;
   padding: 5px 10px;
   border-radius: 5px;
   margin-bottom: 10px;
@@ -817,7 +817,7 @@ a, a:hover, a:focus{
   border: 0;
   resize: none;
   height: 150px;
-  background: #e7e7e7;
+  background: #f0f0f0;
   border-radius: 5px;
   margin-bottom: 20px;
   padding: 5px 10px;
@@ -1397,4 +1397,42 @@ a, a:hover, a:focus{
 	display: inline-block;
 	line-height: 32px;
 	font-size: 16px;
+}
+
+
+/* contact us page css */
+
+.contact-us-item .contact-us-item-inner {
+	display: flex;
+	align-items: center;
+	gap: 16px;
+	padding: 40px 40px 40px;
+	border: 1px solid rgba(18, 20, 29, 0.1);
+	border-radius: 12px;
+	box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+}
+.contact-us-item .contact-us-item-inner .icon i {
+	height: 64px;
+	width: 64px;
+	background-color: var(--btn-bg);
+	color: #fff;
+	border-radius: 50px;
+	text-align: center;
+	line-height: 64px;
+	font-size: 30px;
+}
+.contact-us-item .contact-us-item-inner .text h3 {
+	font-family: var(--main-font);
+	font-size: 24px;
+	font-weight: 700;
+	line-height: 28px;
+	color: var(--primary-color);
+  margin-bottom: 0;
+}
+.contact-us-item .contact-us-item-inner .text a {
+	font-family: var(--main-font);
+	font-size: 18px;
+	font-weight: 400;
+	line-height: 24px;
+	color: var(--secondary-color);
 }
