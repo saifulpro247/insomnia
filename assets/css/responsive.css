@@ -30,6 +30,15 @@
 		left: -15%;
 		top: 3%;
 	}
+	.product_meta_info {
+		flex-direction: column;
+		justify-content: start;
+		gap: 20px;
+	}
+	.product_overview {
+		margin-right: 50px;
+	}
+	
 	
 }
 
@@ -42,6 +51,15 @@
 		
 	.hero_area_content h1 {	font-size: 40px;}
 	.hero_area_content p {	font-size: 20px; margin-left: 0;}
+	.wish_list, .comment_list{display: none;	}
+	.product_overview {	margin-right: 50px;}
+	.product_gallery ul li {flex: 0 0 calc(100% - 24px);}
+	.product_description {flex-direction: column;}
+	.product_overview {
+		max-width: 100%;
+		margin-right: 0;
+		margin-bottom: 40px;
+	}
  
 }
 /* extra small device*/
