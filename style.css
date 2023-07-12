@@ -1466,6 +1466,11 @@ a, a:hover, a:focus{
   width:50px;
   transition:all .3s ease
 }
+.job-block .company-logo img{
+  height: 50px;
+  width: 50px;
+  object-fit: cover;
+}
 .job-block .h4,
 .job-block h4 {
   font-size:18px;
@@ -1485,10 +1490,13 @@ a, a:hover, a:focus{
   color:var(--primary-color)
 }
 .job-block .job-info {
-  position:relative;
-  display:flex;
-  flex-wrap:wrap;
-  margin-bottom:10px
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	margin-bottom: 10px;
+	padding: 0;
+	list-style: none;
+	gap: 15px;
 }
 .job-block .job-info li {
   position:relative;
@@ -1498,7 +1506,6 @@ a, a:hover, a:focus{
   font-weight:400;
   padding-left:25px;
   margin-bottom:5px;
-  margin-right:20px
 }
 .job-block .job-info li i {
   position:absolute;
@@ -1523,16 +1530,314 @@ a, a:hover, a:focus{
   border-radius:50%;
   cursor:pointer;
   background:#fff;
-  transition:all .3s ease
+  transition:all .3s ease;
+  border: 1px solid #999;
+}
+.job-block .bookmark-btn i {
+	margin: 4px;
+	display: block;
 }
 .job-block .bookmark-btn:hover {
   background:#ecedf2
 }
 .job-block .job-other-info {
+	position: relative;
+	display: flex;
+	flex-wrap: wrap;
+	padding: 0;
+	list-style: none;
+	gap: 10px;
+}
+.job-other-info li {
+	position: relative;
+	font-size: 13px;
+	line-height: 15px;
+	margin-right: 15px;
+	padding: 5px 20px;
+	border-radius: 50px;
+	margin-bottom: 10px;
+}
+.job-other-info li.time {
+	background: rgba(25,103,210,.15);
+	color: var(--primary-color);
+}
+.job-other-info li.green, .job-other-info li.privacy {
+	background: rgba(52,168,83,.15);
+	color: #34a853;
+}
+.job-other-info li.required {
+	background: rgba(249,171,0,.15);
+	color: var(--primary-2nd-color);
+}
+
+/* job details */
+.job-detail {
+	position: relative;
+	padding-right: 30px;
+}
+.job-detail h4 {
+	position: relative;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	color: #202124;
+	margin-bottom: 20px;
+}
+.job-detail p {
+	position: relative;
+	font-size: 15px;
+	line-height: 26px;
+	color: dimgray;
+	margin-bottom: 26px;
+}
+.list-style-three {
+	position: relative;
+	margin-bottom: 50px;
+}
+.list-style-three li {
+	position: relative;
+	font-size: 15px;
+	line-height: 26px;
+	color: dimgray;
+	padding-left: 20px;
+	margin-bottom: 25px;
+  list-style: none;
+}
+.list-style-three li::before {
+	position: absolute;
+	left: 0;
+	top: 12px;
+	height: 4px;
+	width: 4px;
+	background: #202124;
+	content: "";
+}
+.job_details .other-options {
+	position: relative;
+	margin-bottom: 50px;
+	margin-top: 50px;
+}
+.job_details .social-share {
+	display: flex;
+	align-items: center;
+}
+
+.social-share h5 {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	color: #202124;
+	margin-right: 20px;
+}
+.social-share a {
+	padding: 10px 25px;
+	font-size: 14px;
+	line-height: 20px;
+	color: #fff;
+	background: #222;
+	border-radius: 8px;
+	transition: all .3s ease;
+	margin: 5px 10px 5px 0;
+}
+.social-share a.facebook {
+	background: #3b5998;
+}
+.social-share a.linkedin {
+	background: #007bb5;
+}
+.social-share a.twitter {
+	background: #55acee;
+}
+.sidebar, .sidebar-widget {
+	position: relative;
+}
+.sidebar-widget {
+	padding: 30px;
+	background: #f5f7fc;
+	border-radius: 8px;
+	margin-bottom: 40px;
+}
+.sidebar-widget .widget-title {
+	position: relative;
+	font-weight: 500;
+	font-size: 18px;
+	line-height: 24px;
+	color: #202124;
+	margin-bottom: 30px;
+}
+.job-overview, .job-overview li {
+	position: relative;
+  padding: 0;
+  list-style: none;
+}
+.job-overview li {
+	padding-left: 50px;
+}
+.job-overview li:not(:last-child) {
+	margin-bottom: 30px;
+}
+.job-overview li i {
+	position: absolute;
+	left: 0;
+	top: 0;
+	height: 30px;
+	width: 30px;
+	background-repeat: no-repeat;
+	background-position: 50%;
+}
+.job-overview h5 {
+	font-weight: 500;
+	font-size: 16px;
+	line-height: 22px;
+	color: #202124;
+  margin-bottom: 0;
+}
+.job-overview span {
+	font-size: 15px;
+	line-height: 20px;
+}
+.job-skills {
+	position: relative;
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+}
+.job-skills li {
+	position: relative;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+.job-skills li a {
+	padding: 5px 20px;
+	display: block;
+	font-size: 14px;
+	line-height: 19px;
+	color: dimgray;
+	border-radius: 4px;
+	background: #fff;
+}
+.sidebar-widget .apply_now a {
+	border: 1px solid #e4e4e4;
+	padding: 10px 20px;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	background-color: #e1e1e1;
+	text-transform: uppercase;
+	font-weight: 500;
+  margin-top: 20px;
+}
+/* job apply modal */
+.apply-modal-content {
+  padding:40px
+}
+.apply-modal-content .title {
+  margin-bottom:20px;
+  font-size:22px;
+  font-weight:500
+}
+.uploading-outer.apply-cv-outer {
+  display:block;
+  padding-bottom:0;
+  margin-bottom:0
+}
+.uploading-outer.apply-cv-outer .uploadButton .uploadButton-button {
+  width:100%;
+  border-color:rgba(25,103,210,.15);
+  height:auto;
+  padding:30px;
+  font-size:14px;
+  color:#77838f
+}
+.uploading-outer.apply-cv-outer .uploadButton .uploadButton-button:before {
+  display:none
+}
+.default-form .form-group textarea {
+	position: relative;
+	width: 100%;
+	display: block;
+	height: 60px;
+	line-height: 30px;
+	font-size: 15px;
+	color: dimgray;
+	background-color: #f0f5f7;
+	border: 1px solid #f0f5f7;
+	box-sizing: border-box;
+	border-radius: 8px;
+	transition: all .3s ease;
+	height: 160px;
+	resize: none;
+	padding: 15px 20px;
+}
+.input-group {
   position:relative;
   display:flex;
-  flex-wrap:wrap
+  flex-wrap:wrap;
+  align-items:stretch;
+  width:100%
 }
+.checkboxes.square label:before {
+  border-radius:2px
+}
+.checkboxes label::before {
+	content: "";
+	display: inline-block;
+	width: 18px;
+	height: 18px;
+	margin-right: 10px;
+	position: absolute;
+	left: 0;
+	top: 2px;
+	background-color: #fff;
+	border: 1px solid #ecedf2;
+	border-radius: 10px;
+	box-sizing: border-box;
+	transition: all .25s;
+	font-family: Font Awesome\ 5 Free;
+	color: #fff;
+	font-size: 9px;
+	font-weight: 900;
+	text-align: center;
+	line-height: 17px;
+}
+.checkboxes label span {
+	color: #909090;
+}
+.theme-btn {
+	position: relative;
+	display: inline-flex;
+	transition: all .5s ease;
+	overflow: hidden;
+	justify-content: center;
+	align-items: center;
+}
+.btn-style-one {
+	position: relative;
+	text-align: center;
+	white-space: nowrap;
+	color: #fff;
+	background-color: var(--primary-color);
+	font-size: 15px;
+	line-height: 20px;
+	border-radius: 8px;
+	font-weight: 400;
+	padding: 18px 35px 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /* work details */
 
