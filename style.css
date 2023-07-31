@@ -53,7 +53,10 @@ a, a:hover, a:focus{
 	position: fixed;
 	background-color: var(--btn-bg);
 }
-
+.site_logo a img {
+  height: 45px;
+  width: auto;
+}
 /* menu css */
 
 .main_menu_area ul {
