@@ -21,6 +21,7 @@ body{
 }
 
 
+
 a, a:hover, a:focus{
   text-decoration: none;
 }
@@ -53,9 +54,24 @@ a, a:hover, a:focus{
 	position: fixed;
 	background-color: var(--btn-bg);
 }
+.site_logo a img {
+  height: 45px;
+  width: auto;
+}
 
 /* menu css */
-
+.mobile-menu-btn {
+  display: flex;
+  justify-content: end;
+}
+.mobile-menu-btn button {
+  height: 45px;
+  width: 45px;
+  border-radius: 50px;
+  border: 0;
+  background-color: var(--bs-primary-bg-subtle);
+}
+.mobile-menu-btn {display: none;}
 .main_menu_area ul {
   list-style: none;
   padding: 0;
@@ -82,6 +98,49 @@ a, a:hover, a:focus{
 .menu_fixed .main_menu_area ul li a.hiring_button {
   color: #fff;
 }
+
+pos {
+}
+.header_menu_area {
+  position: ;
+}
+.mobile_menus {
+	position: absolute;
+	top: 75px;
+	background-color: #fff;
+	width: 300px;
+	padding: 20px 30px 30px 30px;
+	right: 10px;
+	box-shadow: 2px 1px 2px 0px #87898b;
+  display: none;
+}
+.mobile_menus ul {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+.mobile_menus ul li:not(:last-child) {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #fdfd;
+}
+.mobile_menus ul li a {
+  display: block;
+  padding-bottom: 10px;
+  color: var(--primary-color);
+  font-size: 16px;
+}
+.mobile_menus ul li:last-child {
+  padding-top: 10px;
+}
+.mobile_menus  .project_start_btn {
+	background-color: var(--btn-bg);
+	border: 1px solid var(--btn-bg);
+	color: #fff;
+  text-align: center;
+}
+
 
 .header_right_area ul {
   padding: 0;
@@ -531,9 +590,11 @@ a, a:hover, a:focus{
 }
 .single_team_item .memer_thumb img {
   width: 100%;
-  height: auto;
+  height: 310px;
   border-bottom-right-radius: 30px;
   border-top-left-radius: 30px;
+  object-fit: cover;
+
 }
 .single_team_item .memer_thumb {
   margin-bottom: 20px;
@@ -690,7 +751,6 @@ a, a:hover, a:focus{
   color: #fff;
   text-decoration: none;
   text-transform: uppercase;
-  font-weight: 600;
   transition: .5s;
 }
 .incafe_portfolio .view_more_works {
@@ -856,7 +916,10 @@ a, a:hover, a:focus{
 }
 
 /*  footer css */
-
+.footer_logo a img {
+	height: 60px;
+	width: auto;
+}
 .footer_area_bg, .footer_credit_area {
   background-color: var(--primary-color);
 }
@@ -1902,8 +1965,10 @@ a, a:hover, a:focus{
   justify-content: center;
   color: #fff;
   text-transform: uppercase;
-  border-radius: 10px;
+  border-radius: 4px;
   margin-bottom: 20px;
+  font-size: 16px;
+  font-weight: 400;
 }
 
 /* product page */
